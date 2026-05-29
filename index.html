@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peizhe Li's Homepage</title>
+  <meta name="description" content="Peizhe Li's Homepage.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true">
+    <symbol id="icon-github" viewBox="0 0 24 24">
+      <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.05c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.46 11.46 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.31c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/>
+    </symbol>
+    <symbol id="icon-gmail" viewBox="0 0 24 24">
+      <path fill="#ea4335" d="M3 6.5 12 13l9-6.5v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Z"/>
+      <path fill="#fbbc04" d="M3 6.5 12 13v3L3 9.5v-3Z"/>
+      <path fill="#34a853" d="M21 6.5 12 13v3l9-6.5v-3Z"/>
+      <path fill="#4285f4" d="M4.5 5h15c.52 0 .98.27 1.25.68L12 12 3.25 5.68C3.52 5.27 3.98 5 4.5 5Z"/>
+    </symbol>
+    <symbol id="icon-scholar" viewBox="0 0 24 24">
+      <path d="M12 3 1.8 8.5 12 14l8-4.32V16h2V8.5L12 3Zm0 13.2L5.5 12.7V16c0 2.05 2.91 3.7 6.5 3.7s6.5-1.65 6.5-3.7v-3.3L12 16.2Z"/>
+    </symbol>
+    <symbol id="icon-camera" viewBox="0 0 24 24">
+      <path d="M8.5 4 7.1 6H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-3.1l-1.4-2h-7ZM12 9a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+    </symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24">
+      <path d="M8 7a3 3 0 0 1 3-3h7a3 3 0 0 1 3 3v7a3 3 0 0 1-3 3h-1v1a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-7a3 3 0 0 1 3-3h2V7Zm3-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1h-7Zm-3 4H6a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h-4a3 3 0 0 1-3-3v-4Z"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <path d="M4 5h16a2.6 2.6 0 0 1 2.6 2.6v8.8A2.6 2.6 0 0 1 20 19H4a2.6 2.6 0 0 1-2.6-2.6V7.6A2.6 2.6 0 0 1 4 5Zm0 2a.6.6 0 0 0-.6.6v.35L12 13.25l8.6-5.3V7.6A.6.6 0 0 0 20 7H4Zm16.6 3.3-8.08 4.98a1 1 0 0 1-1.04 0L3.4 10.3v6.1A.6.6 0 0 0 4 17h16a.6.6 0 0 0 .6-.6v-6.1Z"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap nav-shell">
+      <a class="brand" href="index.html">Peizhe Li's Homepage</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">关于</a>
+        <a href="#research" data-i18n="navResearch">科研</a>
+        <a href="#life" data-i18n="navLife">博客</a>
+        <a href="#albums" data-i18n="navAlbums">歌曲</a>
+        <a href="#anime" data-i18n="navAnime">动漫</a>
+        <a href="#crafts" data-i18n="navCrafts">手作</a>
+        <a href="gallery.html" data-i18n="navGallery">相册</a>
+      </nav>
+      <div class="control-row">
+        <button class="icon-button language-button" id="languageButton" type="button" aria-label="Switch language" title="Switch language"><img src="assets/icons/earth.svg" alt="" aria-hidden="true">
+          <span id="languageLabel">中</span>
+        </button>
+        <button class="theme-switch" id="themeButton" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+    <section class="profile" id="about">
+      <div class="profile-copy">
+        <p class="kicker">Personal Website / Research Notes / Life Archive</p>
+        <h1 data-i18n="introTitle">你好，我是李培哲。</h1>
+        <div data-lang-panel="zh" class="active">
+          <p>这里是我的个人网站。我希望它既能认真地介绍我的个人信息、科研兴趣和项目，也能保存一些生活里的偏爱：歌曲、动漫、手工作品，以及偶尔更新的日常记录。</p>
+          <p>目前页面还是草稿，内容会随着我的学习、研究和创作持续更新。</p>
+        </div>
+        <div data-lang-panel="en">
+          <p>This is my personal website. I use it to introduce my background, research interests, and projects, while also keeping a small archive of life: songs, anime, handmade works, and occasional notes.</p>
+          <p>The site is still a draft and will keep evolving with my study, research, and creative work.</p>
+        </div>
+        <div class="contact-list">
+          <div class="email-dropdown">
+            <button class="contact-link email-toggle" id="emailToggle" type="button" aria-expanded="false" aria-controls="emailPanel">
+              <img class="contact-icon" src="assets/icons/email.svg" alt="Email icon">
+              <span data-i18n="emailButton">邮箱</span>
+            </button>
+            <div class="email-panel" id="emailPanel">
+              <div class="email-row">
+                <div class="contact-link">
+                  <span class="logo-mark contact-icon"><img src="assets/icons/xjtu.svg" alt="Xi'an Jiaotong University logo"></span>
+                  <span>peizheli0255@stu.xjtu.edu.cn</span>
+                </div>
+                <button class="copy-button" type="button" data-copy="peizheli0255@stu.xjtu.edu.cn" aria-label="Copy XJTU email" title="Copy email">
+                  <svg><use href="#icon-copy"></use></svg>
+                </button>
+              </div>
+              <div class="email-row">
+                <div class="contact-link">
+                  <img class="contact-icon" src="assets/icons/gmail.svg" alt="Gmail logo">
+                  <span>peizheli0255@gmail.com</span>
+                </div>
+                <button class="copy-button" type="button" data-copy="peizheli0255@gmail.com" aria-label="Copy Gmail" title="Copy email">
+                  <svg><use href="#icon-copy"></use></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <a class="contact-link" href="https://github.com/peizheli0255" target="_blank" rel="noreferrer">
+            <img class="contact-icon" src="assets/icons/github.svg" alt="GitHub icon">
+            <span>github.com/peizheli0255</span>
+          </a>
+          <span class="contact-link disabled-link" aria-disabled="true">
+            <img class="contact-icon" src="assets/icons/google-scholar.svg" alt="Google Scholar icon">
+            <span>Google Scholar</span>
+          </span>
+        </div>
+      </div>
+
+      <figure class="portrait-card">
+        <img src="assets/profile/nina.jpg" alt="Peizhe Li profile photo">
+      </figure>
+
+      <div class="education-box">
+        <div class="education-item">
+          <span class="logo-mark education-logo"><img src="assets/icons/xjtu.svg" alt="Xi'an Jiaotong University logo"></span>
+          <div>
+            <strong data-i18n="educationMaster">硕士阶段</strong>
+            <p data-lang-panel="zh" class="active">西安交通大学 · 信息与通信工程学院 · 通信工程 · <span class="latin-date">Sep. 2025 - Present</span></p>
+            <p data-lang-panel="en">Xi'an Jiaotong University · School of Information and Communications Engineering · Communication Engineering · Sep. 2025 - Present</p>
+          </div>
+        </div>
+        <div class="education-item">
+          <span class="logo-mark education-logo"><img src="assets/icons/nwafu.svg" alt="Northwest A&F University logo"></span>
+          <div>
+            <strong data-i18n="educationBachelor">本科阶段</strong>
+            <p data-lang-panel="zh" class="active">西北农林科技大学 · 机械与电子工程学院 · 电子信息工程 · <span class="latin-date">Sep. 2021 - Jun. 2025</span></p>
+            <p data-lang-panel="en">Northwest A&F University · College of Mechanical and Electronic Engineering · Electronic Information Engineering · Sep. 2021 - Jun. 2025</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2 class="section-title" data-i18n="newsTitle">近况</h2>
+      <ul class="news-list vertical-scroll news-scroll" data-drag-y-scroll>
+        <li><time>2026.05.28</time><span data-i18n="newsItem1">完成个人网页的初步创建，之后会继续补充科研、博客、相册与个人作品内容。</span></li>
+      </ul>
+    </section>
+
+    <section class="section-block" id="research">
+      <h2 class="section-title" data-i18n="researchTitle">科研</h2>
+      <div class="vertical-scroll research-list" data-drag-y-scroll>
+        <article class="research-item">
+          <img src="assets/research/research-1.jpg" alt="Research preview" onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=700&q=80'">
+          <div>
+            <h3>Determining Optimal Nitrogen Concentration Intervals Throughout Lettuce Growth Using Fluorescence Parameters</h3>
+            <p class="author-list"><strong>Peizhe Li</strong><sup>1</sup>, Zhangtong Sun<sup>1</sup>, Yongxia Yang, Miao Lu, Huimin Li, Haoran Yan, Jin Hu<sup>*</sup>, Yuling Song<sup>*</sup></p>
+            <p class="journal-line"><em>Computers and Electronics in Agriculture</em>, 226 (2024) 109438.</p>
+            <p class="corresponding-note"><sup>1</sup> Equal contribution. <sup>*</sup> Corresponding authors.</p>
+            <p data-lang-panel="zh" class="active">本研究基于荧光参数确定生菜不同生长阶段的最优氮浓度区间，为设施农业中的营养管理提供参考。</p>
+            <p data-lang-panel="en">This paper uses fluorescence parameters to determine optimal nitrogen concentration intervals across lettuce growth stages, providing a reference for nutrient management in controlled agriculture.</p>
+            <p class="inline-links"><a href="https://www.sciencedirect.com/science/article/pii/S0168169924008299" target="_blank" rel="noreferrer">[Paper]</a><span class="disabled-paper-link" aria-disabled="true">[Code]</span><span class="disabled-paper-link" aria-disabled="true">[Project Page]</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="life">
+      <div class="section-row">
+        <h2 class="section-title" data-i18n="lifeTitle">博客</h2>
+        <a class="small-link bracket-link" href="posts/life-1.html"><span class="bracket">[</span><span data-i18n="showAll">展示全部</span><span class="bracket">]</span></a>
+      </div>
+      <div class="vertical-scroll blog-list" aria-label="Life blog posts">
+        <a class="blog-card" href="posts/life-1.html">
+          <time>2026.05.27</time>
+          <h3 data-i18n="blogTitle1">把个人网站当作一个长期的房间</h3>
+          <p data-i18n="blogDesc1">记录为什么想建这个网站，以及科研与生活怎样在同一页里共存。</p>
+        </a>
+        <a class="blog-card" href="posts/life-2.html">
+          <time>2026.04.18</time>
+          <h3 data-i18n="blogTitle2">最近听到的一张专辑</h3>
+          <p data-i18n="blogDesc2">一篇可以逐渐替换成真实内容的听歌札记。</p>
+        </a>
+        <a class="blog-card" href="posts/life-3.html">
+          <time>2026.03.09</time>
+          <h3 data-i18n="blogTitle3">手作过程记录</h3>
+          <p data-i18n="blogDesc3">材料、失败、修正，以及最后留下来的细节。</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-block" id="albums">
+      <div class="section-row">
+        <h2 class="section-title" data-i18n="albumsTitle">喜欢的歌曲</h2>
+        <a class="drag-tip bracket-link" href="songs.html"><span class="bracket">[</span><span data-i18n="showAll">展示全部</span><span class="bracket">]</span></a>
+      </div>
+      <div class="drag-rail song-rail" data-drag-scroll>
+        <a class="cover-card song-card" href="details/song-1.html" aria-label="Open 光るなら details">
+          <img src="assets/songs/song-1.jpg" alt="Song cover" onerror="this.src='https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>光るなら</strong><small>Goose house · 2014</small></span>
+        </a>
+        <a class="cover-card song-card" href="details/song-2.html" aria-label="Open 倒数 details">
+          <img src="assets/songs/song-2.jpg" alt="Song cover" onerror="this.src='https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>倒数</strong><small>G.E.M.邓紫棋 · 2018</small></span>
+        </a>
+        <a class="cover-card song-card" href="details/song-3.html" aria-label="Open マリーゴールド details">
+          <img src="assets/songs/song-3.jpg" alt="Song cover" onerror="this.src='https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>マリーゴールド</strong><small>爱缪 · 2018</small></span>
+        </a>
+        <a class="cover-card song-card" href="details/song-4.html" aria-label="Open あの夢をなぞって details">
+          <img src="assets/songs/song-4.jpg" alt="Song cover" onerror="this.src='https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>あの夢をなぞって</strong><small>YOASOBI · 2020</small></span>
+        </a>
+        <a class="cover-card song-card" href="details/song-5.html" aria-label="Open ハルカ details">
+          <img src="assets/songs/song-5.jpg" alt="Song cover" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>ハルカ</strong><small>YOASOBI · 2020</small></span>
+        </a>
+        <a class="cover-card song-card" href="details/song-6.html" aria-label="Open 星のパンフレット details">
+          <img src="assets/songs/song-6.jpg" alt="Song cover" onerror="this.src='https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>星のパンフレット</strong><small>H△G · 2022</small></span>
+        </a>
+        <a class="cover-card song-card" href="details/song-7.html" aria-label="Open あの夏に咲け details">
+          <img src="assets/songs/song-7.jpg" alt="Song cover" onerror="this.src='https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>あの夏に咲け</strong><small>ヨルシカ · 2017</small></span>
+        </a>
+        <a class="cover-card song-card" href="details/song-8.html" aria-label="Open 脱・借りてきた猫症候群 details">
+          <img src="assets/songs/song-8.jpg" alt="Song cover" onerror="this.src='https://images.unsplash.com/photo-1446057032654-9d8885db76c6?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>脱・借りてきた猫症候群</strong><small>Uru · 2023</small></span>
+        </a>
+        <a class="cover-card song-card" href="details/song-9.html" aria-label="Open Tiny Light details">
+          <img src="assets/songs/song-9.jpg" alt="Song cover" onerror="this.src='https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>Tiny Light</strong><small>鬼頭明里 · 2020</small></span>
+        </a>
+        <a class="cover-card song-card" href="details/song-10.html" aria-label="Open スパークル details">
+          <img src="assets/songs/song-10.jpg" alt="Song cover" onerror="this.src='https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>スパークル</strong><small>RADWIMPS · 2016</small></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-block" id="anime">
+      <div class="section-row">
+        <h2 class="section-title" data-i18n="animeTitle">喜欢的动漫</h2>
+        <a class="drag-tip bracket-link" href="anime.html"><span class="bracket">[</span><span data-i18n="showAll">展示全部</span><span class="bracket">]</span></a>
+      </div>
+      <div class="horizontal-scroll vertical-mode anime-row" data-drag-y-scroll>
+        <article class="anime-strip">
+          <img src="assets/anime/anime-1.jpg" alt="Anime cover" onerror="this.src='https://images.unsplash.com/photo-1618336753974-aae8e04506aa?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>君の名は。（你的名字。）</strong><small>2016 · CoMix Wave Films</small></span>
+          <a class="expand-icon" href="details/anime-1.html" aria-label="Open 君の名は。（你的名字。） details">&rsaquo;</a>
+        </article>
+        <article class="anime-strip">
+          <img src="assets/anime/anime-2.jpg" alt="Anime cover" onerror="this.src='https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>ガールズバンドクライ（GIRLS BAND CRY）</strong><small>2024 · TOEI ANIMATION</small></span>
+          <a class="expand-icon" href="details/anime-2.html" aria-label="Open ガールズバンドクライ（GIRLS BAND CRY） details">&rsaquo;</a>
+        </article>
+        <article class="anime-strip">
+          <img src="assets/anime/anime-3.jpg" alt="Anime cover" onerror="this.src='https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>かぐや様は告らせたい～天才たちの恋愛頭脳戦～（辉夜大小姐想让我告白～天才们的恋爱头脑战～）</strong><small>2020 · A-1 Pictures</small></span>
+          <a class="expand-icon" href="details/anime-3.html" aria-label="Open かぐや様は告らせたい～天才たちの恋愛頭脳戦～（辉夜大小姐想让我告白～天才们的恋爱头脑战～） details">&rsaquo;</a>
+        </article>
+        <article class="anime-strip">
+          <img src="assets/anime/anime-4.jpg" alt="Anime cover" onerror="this.src='https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>四月は君の嘘（四月是你的谎言）</strong><small>2016 · A-1 Pictures</small></span>
+          <a class="expand-icon" href="details/anime-4.html" aria-label="Open 四月は君の嘘（四月是你的谎言） details">&rsaquo;</a>
+        </article>
+        <article class="anime-strip">
+          <img src="assets/anime/anime-5.webp" alt="Anime cover" onerror="this.src='https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>ホリミヤ（堀与宫村）</strong><small>2021 · CloverWorks</small></span>
+          <a class="expand-icon" href="details/anime-5.html" aria-label="Open ホリミヤ（堀与宫村） details">&rsaquo;</a>
+        </article>
+        <article class="anime-strip">
+          <img src="assets/anime/anime-6.jpg" alt="Anime cover" onerror="this.src='https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>テニスの王子様（网球王子）</strong><small>2010 · M.S.C &amp; Production I.G</small></span>
+          <a class="expand-icon" href="details/anime-6.html" aria-label="Open テニスの王子様（网球王子） details">&rsaquo;</a>
+        </article>
+        <article class="anime-strip">
+          <img src="assets/anime/anime-7.jpg" alt="Anime cover" onerror="this.src='https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>イナズマイレブン（闪电十一人）</strong><small>2008 · LEVEL-5</small></span>
+          <a class="expand-icon" href="details/anime-7.html" aria-label="Open イナズマイレブン（闪电十一人） details">&rsaquo;</a>
+        </article>
+        <article class="anime-strip">
+          <img src="assets/anime/anime-8.jpg" alt="Anime cover" onerror="this.src='https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>Anime Title 08</strong><small>2026 · Studio Name</small></span>
+          <a class="expand-icon" href="details/anime-8.html" aria-label="Open Anime Title 08 details">&rsaquo;</a>
+        </article>
+        <article class="anime-strip">
+          <img src="assets/anime/anime-9.jpg" alt="Anime cover" onerror="this.src='https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>Anime Title 09</strong><small>2026 · Studio Name</small></span>
+          <a class="expand-icon" href="details/anime-9.html" aria-label="Open Anime Title 09 details">&rsaquo;</a>
+        </article>
+        <article class="anime-strip">
+          <img src="assets/anime/anime-10.jpg" alt="Anime cover" onerror="this.src='https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <span><strong>Anime Title 10</strong><small>2026 · Studio Name</small></span>
+          <a class="expand-icon" href="details/anime-10.html" aria-label="Open Anime Title 10 details">&rsaquo;</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block" id="crafts">
+      <div class="section-row">
+        <h2 class="section-title" data-i18n="craftsTitle">手工作品</h2>
+        <a class="small-link bracket-link" href="gallery.html#crafts"><svg><use href="#icon-camera"></use></svg><span class="bracket">[</span><span data-i18n="showGallery">打开相册</span><span class="bracket">]</span></a>
+      </div>
+      <div class="vertical-scroll craft-list" data-drag-y-scroll>
+        <a class="craft-entry" href="details/craft-1.html">
+          <img src="assets/crafts/work-1.jpg" alt="Handmade work" onerror="this.src='https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <div>
+            <h3>Handmade Work 01</h3>
+            <p class="meta">Material · Finished · 2026</p>
+            <p data-lang-panel="zh" class="active">这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。</p>
+            <p data-lang-panel="en">Add materials, size, process notes, revisions, and final photos for this handmade work.</p>
+          </div>
+        </a>
+        <a class="craft-entry" href="details/craft-2.html">
+          <img src="assets/crafts/work-2.jpg" alt="Handmade work" onerror="this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <div>
+            <h3>Handmade Work 02</h3>
+            <p class="meta">Material · Finished · 2026</p>
+            <p data-lang-panel="zh" class="active">这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。</p>
+            <p data-lang-panel="en">Add materials, size, process notes, revisions, and final photos for this handmade work.</p>
+          </div>
+        </a>
+        <a class="craft-entry" href="details/craft-3.html">
+          <img src="assets/crafts/work-3.jpg" alt="Handmade work" onerror="this.src='https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <div>
+            <h3>Handmade Work 03</h3>
+            <p class="meta">Material · Finished · 2026</p>
+            <p data-lang-panel="zh" class="active">这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。</p>
+            <p data-lang-panel="en">Add materials, size, process notes, revisions, and final photos for this handmade work.</p>
+          </div>
+        </a>
+        <a class="craft-entry" href="details/craft-4.html">
+          <img src="assets/crafts/work-4.jpg" alt="Handmade work" onerror="this.src='https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <div>
+            <h3>Handmade Work 04</h3>
+            <p class="meta">Material · Finished · 2026</p>
+            <p data-lang-panel="zh" class="active">这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。</p>
+            <p data-lang-panel="en">Add materials, size, process notes, revisions, and final photos for this handmade work.</p>
+          </div>
+        </a>
+        <a class="craft-entry" href="details/craft-5.html">
+          <img src="assets/crafts/work-5.jpg" alt="Handmade work" onerror="this.src='https://images.unsplash.com/photo-1493106819501-66d381c466f1?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <div>
+            <h3>Handmade Work 05</h3>
+            <p class="meta">Material · Finished · 2026</p>
+            <p data-lang-panel="zh" class="active">这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。</p>
+            <p data-lang-panel="en">Add materials, size, process notes, revisions, and final photos for this handmade work.</p>
+          </div>
+        </a>
+        <a class="craft-entry" href="details/craft-6.html">
+          <img src="assets/crafts/work-6.jpg" alt="Handmade work" onerror="this.src='https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <div>
+            <h3>Handmade Work 06</h3>
+            <p class="meta">Material · Finished · 2026</p>
+            <p data-lang-panel="zh" class="active">这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。</p>
+            <p data-lang-panel="en">Add materials, size, process notes, revisions, and final photos for this handmade work.</p>
+          </div>
+        </a>
+        <a class="craft-entry" href="details/craft-7.html">
+          <img src="assets/crafts/work-7.jpg" alt="Handmade work" onerror="this.src='https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <div>
+            <h3>Handmade Work 07</h3>
+            <p class="meta">Material · Finished · 2026</p>
+            <p data-lang-panel="zh" class="active">这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。</p>
+            <p data-lang-panel="en">Add materials, size, process notes, revisions, and final photos for this handmade work.</p>
+          </div>
+        </a>
+        <a class="craft-entry" href="details/craft-8.html">
+          <img src="assets/crafts/work-8.jpg" alt="Handmade work" onerror="this.src='https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <div>
+            <h3>Handmade Work 08</h3>
+            <p class="meta">Material · Finished · 2026</p>
+            <p data-lang-panel="zh" class="active">这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。</p>
+            <p data-lang-panel="en">Add materials, size, process notes, revisions, and final photos for this handmade work.</p>
+          </div>
+        </a>
+        <a class="craft-entry" href="details/craft-9.html">
+          <img src="assets/crafts/work-9.jpg" alt="Handmade work" onerror="this.src='https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <div>
+            <h3>Handmade Work 09</h3>
+            <p class="meta">Material · Finished · 2026</p>
+            <p data-lang-panel="zh" class="active">这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。</p>
+            <p data-lang-panel="en">Add materials, size, process notes, revisions, and final photos for this handmade work.</p>
+          </div>
+        </a>
+        <a class="craft-entry" href="details/craft-10.html">
+          <img src="assets/crafts/work-10.jpg" alt="Handmade work" onerror="this.src='https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&amp;fit=crop&amp;w=700&amp;q=80'">
+          <div>
+            <h3>Handmade Work 10</h3>
+            <p class="meta">Material · Finished · 2026</p>
+            <p data-lang-panel="zh" class="active">这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。</p>
+            <p data-lang-panel="en">Add materials, size, process notes, revisions, and final photos for this handmade work.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span class="footer-meta">
+        <span data-i18n="footerCopyright">(c) 2026 Peizhe Li</span>
+        <span data-i18n="footerUpdated">Last updated: May 2026</span>
+        <span class="footer-powered"><span data-i18n="footerPowered">Powered by Codex</span><img src="assets/icons/codex.svg" alt="Codex logo"></span>
+      </span>
+      <a class="back-top" href="#top" data-i18n="backTop">回到顶部</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

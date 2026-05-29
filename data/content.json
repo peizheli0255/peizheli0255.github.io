@@ -1,0 +1,338 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "title": "光るなら",
+      "image": "assets/songs/song-1.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=900&q=80",
+      "artist": "Goose house",
+      "year": "2014",
+      "album": "光るなら",
+      "zh": "这里纵向展示歌曲详情：为什么喜欢、常听片段、听感关键词、相关记忆，以及可以引用 MusicBrainz 或其它音乐数据库补全的信息。",
+      "en": "This page presents song details vertically: why I like it, favorite moments, listening keywords, memories, and metadata that can later be filled from MusicBrainz or other music databases."
+    },
+    {
+      "id": 2,
+      "title": "倒数",
+      "image": "assets/songs/song-2.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80",
+      "artist": "G.E.M.邓紫棋",
+      "year": "2018",
+      "album": "另一个童话",
+      "zh": "这里可以写这首歌适合的场景、最喜欢的编曲细节，以及你第一次听到它的时间。",
+      "en": "This page can record the scenes this song fits, the arrangement details I like most, and when I first heard it."
+    },
+    {
+      "id": 3,
+      "title": "マリーゴールド",
+      "image": "assets/songs/song-3.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=900&q=80",
+      "artist": "爱缪",
+      "year": "2018",
+      "album": "マリーゴールド",
+      "zh": "这里可以整理歌词片段摘要、推荐理由、所属专辑和外部数据库链接。",
+      "en": "This page can collect short lyric notes, recommendation reasons, album information, and external database links."
+    },
+    {
+      "id": 4,
+      "title": "あの夢をなぞって",
+      "image": "assets/songs/song-4.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+      "artist": "YOASOBI",
+      "year": "2020",
+      "album": "あの夢をなぞって",
+      "zh": "这里填写这首歌的介绍、喜欢的原因、常听片段与相关记忆。",
+      "en": "Add notes about this song: why I like it, favorite moments, listening keywords, and memories."
+    },
+    {
+      "id": 5,
+      "title": "ハルカ",
+      "image": "assets/songs/song-5.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=900&q=80",
+      "artist": "YOASOBI",
+      "year": "2020",
+      "album": "ハルカ",
+      "zh": "这里填写这首歌的介绍、喜欢的原因、常听片段与相关记忆。",
+      "en": "Add notes about this song: why I like it, favorite moments, listening keywords, and memories."
+    },
+    {
+      "id": 6,
+      "title": "星のパンフレット",
+      "image": "assets/songs/song-6.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=80",
+      "artist": "H△G",
+      "year": "2022",
+      "album": "星見る頃を過ぎても - The BEST of H△G",
+      "zh": "这里填写这首歌的介绍、喜欢的原因、常听片段与相关记忆。",
+      "en": "Add notes about this song: why I like it, favorite moments, listening keywords, and memories."
+    },
+    {
+      "id": 7,
+      "title": "あの夏に咲け",
+      "image": "assets/songs/song-7.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1483412033650-1015ddeb83d1?auto=format&fit=crop&w=900&q=80",
+      "artist": "ヨルシカ",
+      "year": "2017",
+      "album": "夏草が邪魔をする",
+      "zh": "这里填写这首歌的介绍、喜欢的原因、常听片段与相关记忆。",
+      "en": "Add notes about this song: why I like it, favorite moments, listening keywords, and memories."
+    },
+    {
+      "id": 8,
+      "title": "脱・借りてきた猫症候群",
+      "image": "assets/songs/song-8.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1446057032654-9d8885db76c6?auto=format&fit=crop&w=900&q=80",
+      "artist": "Uru",
+      "year": "2023",
+      "album": "コントラスト(Special Edition)",
+      "zh": "这里填写这首歌的介绍、喜欢的原因、常听片段与相关记忆。",
+      "en": "Add notes about this song: why I like it, favorite moments, listening keywords, and memories."
+    },
+    {
+      "id": 9,
+      "title": "Tiny Light",
+      "image": "assets/songs/song-9.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=900&q=80",
+      "artist": "鬼頭明里",
+      "year": "2020",
+      "album": "Desire Again",
+      "zh": "这里填写这首歌的介绍、喜欢的原因、常听片段与相关记忆。",
+      "en": "Add notes about this song: why I like it, favorite moments, listening keywords, and memories."
+    },
+    {
+      "id": 10,
+      "title": "スパークル",
+      "image": "assets/songs/song-10.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?auto=format&fit=crop&w=900&q=80",
+      "artist": "RADWIMPS",
+      "year": "2016",
+      "album": "君の名は。",
+      "zh": "这里填写这首歌的介绍、喜欢的原因、常听片段与相关记忆。",
+      "en": "Add notes about this song: why I like it, favorite moments, listening keywords, and memories."
+    }
+  ],
+  "anime": [
+    {
+      "id": 1,
+      "title": "君の名は。（你的名字。）",
+      "image": "assets/anime/anime-1.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1618336753974-aae8e04506aa?auto=format&fit=crop&w=900&q=80",
+      "year": "2016",
+      "studio": "CoMix Wave Films",
+      "favorite": "I",
+      "zh": "「思ひつつ寝ればや、人の見えつらむ。夢と知りせば、覚めざらましを」",
+      "en": "This page presents anime details vertically: synopsis, characters, favorite arcs, viewing timeline, and cover metadata that can later be filled from the AniList API."
+    },
+    {
+      "id": 2,
+      "title": "ガールズバンドクライ（GIRLS BAND CRY）",
+      "image": "assets/anime/anime-2.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=900&q=80",
+      "year": "2024",
+      "studio": "TOEI ANIMATION",
+      "favorite": "I",
+      "zh": "「怒りも喜びも哀しさも、全部ぶちこめ。」",
+      "en": "This page can record the synopsis, favorite characters, visual style, and viewing memories."
+    },
+    {
+      "id": 3,
+      "title": "かぐや様は告らせたい～天才たちの恋愛頭脳戦～（辉夜大小姐想让我告白～天才们的恋爱头脑战～）",
+      "image": "assets/anime/anime-3.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=900&q=80",
+      "year": "2020",
+      "studio": "A-1 Pictures",
+      "favorite": "II",
+      "zh": "「LOVE IS WAR」",
+      "en": "This page can collect recommendation reasons, favorite arcs, and soundtrack impressions."
+    },
+    {
+      "id": 4,
+      "title": "四月は君の嘘（四月是你的谎言）",
+      "image": "assets/anime/anime-4.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?auto=format&fit=crop&w=900&q=80",
+      "year": "2016",
+      "studio": "A-1 Pictures",
+      "favorite": "I",
+      "zh": "这里填写这部动漫的介绍、喜欢的角色、画面风格、音乐与观看记忆。",
+      "en": "Add notes about this anime: favorite characters, visual style, music, and viewing memories."
+    },
+    {
+      "id": 5,
+      "title": "ホリミヤ（堀与宫村）",
+      "image": "assets/anime/anime-5.webp",
+      "fallbackImage": "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=900&q=80",
+      "year": "2021",
+      "studio": "CloverWorks",
+      "favorite": "I",
+      "zh": "这里填写这部动漫的介绍、喜欢的角色、画面风格、音乐与观看记忆。",
+      "en": "Add notes about this anime: favorite characters, visual style, music, and viewing memories."
+    },
+    {
+      "id": 6,
+      "title": "テニスの王子様（网球王子）",
+      "image": "assets/anime/anime-6.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=900&q=80",
+      "year": "2010",
+      "studio": "M.S.C & Production I.G",
+      "favorite": "OVA 全国大会篇",
+      "zh": "这里填写这部动漫的介绍、喜欢的角色、画面风格、音乐与观看记忆。",
+      "en": "Add notes about this anime: favorite characters, visual style, music, and viewing memories."
+    },
+    {
+      "id": 7,
+      "title": "イナズマイレブン（闪电十一人）",
+      "image": "assets/anime/anime-7.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=900&q=80",
+      "year": "2008",
+      "studio": "LEVEL-5",
+      "favorite": "Favorite",
+      "zh": "这里填写这部动漫的介绍、喜欢的角色、画面风格、音乐与观看记忆。",
+      "en": "Add notes about this anime: favorite characters, visual style, music, and viewing memories."
+    },
+    {
+      "id": 8,
+      "title": "Anime Title 08",
+      "image": "assets/anime/anime-8.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=900&q=80",
+      "year": "2026",
+      "studio": "Studio Name",
+      "favorite": "Favorite",
+      "zh": "这里填写这部动漫的介绍、喜欢的角色、画面风格、音乐与观看记忆。",
+      "en": "Add notes about this anime: favorite characters, visual style, music, and viewing memories."
+    },
+    {
+      "id": 9,
+      "title": "Anime Title 09",
+      "image": "assets/anime/anime-9.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1526481280693-3bfa7568e0f3?auto=format&fit=crop&w=900&q=80",
+      "year": "2026",
+      "studio": "Studio Name",
+      "favorite": "Favorite",
+      "zh": "这里填写这部动漫的介绍、喜欢的角色、画面风格、音乐与观看记忆。",
+      "en": "Add notes about this anime: favorite characters, visual style, music, and viewing memories."
+    },
+    {
+      "id": 10,
+      "title": "Anime Title 10",
+      "image": "assets/anime/anime-10.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?auto=format&fit=crop&w=900&q=80",
+      "year": "2026",
+      "studio": "Studio Name",
+      "favorite": "Favorite",
+      "zh": "这里填写这部动漫的介绍、喜欢的角色、画面风格、音乐与观看记忆。",
+      "en": "Add notes about this anime: favorite characters, visual style, music, and viewing memories."
+    }
+  ],
+  "crafts": [
+    {
+      "id": 1,
+      "title": "Handmade Work 01",
+      "image": "assets/crafts/work-1.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=80",
+      "material": "Material",
+      "time": "2026",
+      "status": "Finished",
+      "zh": "这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。",
+      "en": "Add materials, size, process notes, revisions, and final photos for this handmade work."
+    },
+    {
+      "id": 2,
+      "title": "Handmade Work 02",
+      "image": "assets/crafts/work-2.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=80",
+      "material": "Material",
+      "time": "2026",
+      "status": "Finished",
+      "zh": "这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。",
+      "en": "Add materials, size, process notes, revisions, and final photos for this handmade work."
+    },
+    {
+      "id": 3,
+      "title": "Handmade Work 03",
+      "image": "assets/crafts/work-3.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=80",
+      "material": "Material",
+      "time": "2026",
+      "status": "Finished",
+      "zh": "这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。",
+      "en": "Add materials, size, process notes, revisions, and final photos for this handmade work."
+    },
+    {
+      "id": 4,
+      "title": "Handmade Work 04",
+      "image": "assets/crafts/work-4.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=80",
+      "material": "Material",
+      "time": "2026",
+      "status": "Finished",
+      "zh": "这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。",
+      "en": "Add materials, size, process notes, revisions, and final photos for this handmade work."
+    },
+    {
+      "id": 5,
+      "title": "Handmade Work 05",
+      "image": "assets/crafts/work-5.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1493106819501-66d381c466f1?auto=format&fit=crop&w=900&q=80",
+      "material": "Material",
+      "time": "2026",
+      "status": "Finished",
+      "zh": "这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。",
+      "en": "Add materials, size, process notes, revisions, and final photos for this handmade work."
+    },
+    {
+      "id": 6,
+      "title": "Handmade Work 06",
+      "image": "assets/crafts/work-6.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=80",
+      "material": "Material",
+      "time": "2026",
+      "status": "Finished",
+      "zh": "这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。",
+      "en": "Add materials, size, process notes, revisions, and final photos for this handmade work."
+    },
+    {
+      "id": 7,
+      "title": "Handmade Work 07",
+      "image": "assets/crafts/work-7.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1516387938699-a93567ec168e?auto=format&fit=crop&w=900&q=80",
+      "material": "Material",
+      "time": "2026",
+      "status": "Finished",
+      "zh": "这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。",
+      "en": "Add materials, size, process notes, revisions, and final photos for this handmade work."
+    },
+    {
+      "id": 8,
+      "title": "Handmade Work 08",
+      "image": "assets/crafts/work-8.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=900&q=80",
+      "material": "Material",
+      "time": "2026",
+      "status": "Finished",
+      "zh": "这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。",
+      "en": "Add materials, size, process notes, revisions, and final photos for this handmade work."
+    },
+    {
+      "id": 9,
+      "title": "Handmade Work 09",
+      "image": "assets/crafts/work-9.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+      "material": "Material",
+      "time": "2026",
+      "status": "Finished",
+      "zh": "这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。",
+      "en": "Add materials, size, process notes, revisions, and final photos for this handmade work."
+    },
+    {
+      "id": 10,
+      "title": "Handmade Work 10",
+      "image": "assets/crafts/work-10.jpg",
+      "fallbackImage": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=900&q=80",
+      "material": "Material",
+      "time": "2026",
+      "status": "Finished",
+      "zh": "这里填写手工作品的材料、尺寸、制作过程、失败与修正，以及最终完成照片。",
+      "en": "Add materials, size, process notes, revisions, and final photos for this handmade work."
+    }
+  ]
+}
