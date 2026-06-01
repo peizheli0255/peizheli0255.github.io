@@ -27,6 +27,12 @@ const groups = {
         ["Album", item.album]
       ];
     },
+    detailExtra(item) {
+      const href = item.qqMusicUrl || "#";
+      const disabled = item.qqMusicUrl ? "" : " is-disabled";
+      const attrs = item.qqMusicUrl ? ` href="${attr(href)}" target="_blank" rel="noreferrer"` : ` href="#" aria-disabled="true"`;
+      return `<p class="music-link-row"><a class="music-platform-link${disabled}"${attrs}><img src="../icons/qqmusic.svg" alt="" aria-hidden="true"><span>QQ Music</span></a></p>`;
+    },
     archiveMeta(item) {
       return `${item.artist} · ${item.album} · ${item.year}`;
     },
@@ -53,7 +59,7 @@ const groups = {
       return [
         ["Year", item.year],
         ["Studio", item.studio],
-        ["Season", item.season || item.favorite]
+        ["Category", item.category || item.favorite]
       ];
     },
     archiveMeta(item) {
@@ -102,10 +108,6 @@ function detailImagePath(item) {
 
 function topImagePath(item) {
   return item.image;
-}
-
-function onerror(item, width) {
-  return item.fallbackImage ? ` onerror="this.src='${attr(item.fallbackImage.replace("w=900", `w=${width}`))}'"` : "";
 }
 
 function header(prefix = "..") {
@@ -163,11 +165,12 @@ function detailPage(group, item, index, total) {
 <body class="detail-page">
   ${header("..")}
   <main class="wrap detail-layout">
-    <img class="detail-cover" src="${attr(detailImagePath(item))}" alt="${attr(group.imageAlt)}"${onerror(item, 900)}>
+    <img class="detail-cover" src="${attr(detailImagePath(item))}" alt="${attr(group.imageAlt)}">
     <article class="detail-content">
       <p class="kicker">${esc(group.detailTitle)}</p>
       <h1>${esc(item.title)}</h1>
       ${infoList(group.detailInfo(item))}
+      ${group.detailExtra ? group.detailExtra(item) : ""}
       <div data-lang-panel="zh" class="active">
         <p>${esc(item.zh)}</p>
       </div>
@@ -186,7 +189,7 @@ function detailPage(group, item, index, total) {
 function catalogItem(group, item) {
   const prefix = group.detailPrefix;
   const animeClass = prefix === "anime" ? " anime-catalog" : "";
-  return `      <article class="catalog-item${animeClass}"><img src="${attr(topImagePath(item))}" alt="${attr(group.imageAlt)}"${onerror(item, 700)}><div><h3>${esc(item.title)}</h3><p>${esc(group.archiveMeta(item))}</p></div><a class="expand-icon" href="details/${prefix}-${item.id}.html" aria-label="Open ${attr(item.title)} details">&rsaquo;</a></article>`;
+  return `      <article class="catalog-item${animeClass}"><img src="${attr(topImagePath(item))}" alt="${attr(group.imageAlt)}"><div><h3>${esc(item.title)}</h3><p>${esc(group.archiveMeta(item))}</p></div><a class="expand-icon" href="details/${prefix}-${item.id}.html" aria-label="Open ${attr(item.title)} details">&rsaquo;</a></article>`;
 }
 
 function archivePage(group, items) {
@@ -226,14 +229,14 @@ ${items.map((item) => catalogItem(group, item)).join("\n")}
 
 function songIndexCard(item) {
   return `        <a class="cover-card song-card" href="details/song-${item.id}.html" aria-label="Open ${attr(item.title)} details">
-          <img src="${attr(topImagePath(item))}" alt="Song cover"${onerror(item, 700)}>
+          <img src="${attr(topImagePath(item))}" alt="Song cover">
           <span><strong>${esc(item.title)}</strong><small>${esc(groups.songs.indexMeta(item))}</small></span>
         </a>`;
 }
 
 function animeIndexCard(item) {
   return `        <article class="anime-strip">
-          <img src="${attr(topImagePath(item))}" alt="Anime cover"${onerror(item, 700)}>
+          <img src="${attr(topImagePath(item))}" alt="Anime cover">
           <span><strong>${esc(item.title)}</strong><small>${esc(groups.anime.indexMeta(item))}</small></span>
           <a class="expand-icon" href="details/anime-${item.id}.html" aria-label="Open ${attr(item.title)} details">&rsaquo;</a>
         </article>`;
@@ -241,7 +244,7 @@ function animeIndexCard(item) {
 
 function craftIndexCard(item) {
   return `        <a class="craft-entry" href="details/craft-${item.id}.html">
-          <img src="${attr(topImagePath(item))}" alt="Handmade work"${onerror(item, 700)}>
+          <img src="${attr(topImagePath(item))}" alt="Handmade work">
           <div>
             <h3>${esc(item.title)}</h3>
             <p class="meta">${esc(groups.crafts.indexMeta(item))}</p>

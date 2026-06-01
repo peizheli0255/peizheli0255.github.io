@@ -9,6 +9,8 @@
   --soft: #f8efe8;
   --shadow: 0 18px 46px rgba(99, 31, 38, 0.11);
   --radius: 8px;
+  --font-latin-serif: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --font-zh-zhongsong: "STZhongsong", "华文中宋", "Noto Serif SC", "Songti SC", "SimSun", serif;
   color-scheme: light;
 }
 
@@ -88,7 +90,7 @@ img {
 
 .brand {
   color: #fff8ef;
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-family: var(--font-latin-serif);
   font-size: 1.28rem;
   font-weight: 700;
   white-space: nowrap;
@@ -104,7 +106,7 @@ img {
   justify-content: center;
   justify-self: center;
   gap: 7px 15px;
-  font-family: "STZhongsong", "华文中宋", "SimSun", "Songti SC", serif;
+  font-family: var(--font-zh-zhongsong);
   font-size: 0.95rem;
 }
 
@@ -125,7 +127,7 @@ img {
 
 html[lang="en"] .nav-links,
 html[lang="en"] .icon-button {
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-family: var(--font-latin-serif);
 }
 
 .control-row,
@@ -156,7 +158,7 @@ html[lang="en"] .icon-button {
   background: rgba(255, 251, 240, 0.13);
   color: #fff8ef;
   cursor: pointer;
-  font-family: "STZhongsong", "华文中宋", "SimSun", "Songti SC", serif;
+  font-family: var(--font-zh-zhongsong);
   font-size: 0.82rem;
 }
 
@@ -294,9 +296,13 @@ h1 {
   object-fit: contain;
 }
 
-html[lang="zh-CN"] .email-dropdown,
-html[lang="zh-CN"] .email-panel {
-  font-family: "STZhongsong", "华文中宋", "SimSun", "Songti SC", serif;
+.email-panel,
+.email-panel .contact-link {
+  font-family: var(--font-latin-serif);
+}
+
+html[lang="zh-CN"] .email-toggle [data-i18n="emailButton"] {
+  font-family: var(--font-zh-zhongsong);
 }
 
 button.contact-link {
@@ -483,12 +489,12 @@ button.contact-link {
   border-left: 3px solid var(--red);
   border-radius: 0 var(--radius) var(--radius) 0;
   background: var(--soft);
-  font-family: "STZhongsong", "华文中宋", "SimSun", "Songti SC", serif;
+  font-family: var(--font-zh-zhongsong);
   user-select: none;
 }
 
 html[lang="en"] .education-box {
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-family: var(--font-latin-serif);
 }
 
 html[lang="zh-CN"] .education-box p {
@@ -519,7 +525,7 @@ html[lang="zh-CN"] .education-box p {
 }
 
 .latin-date {
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .education-logo {
@@ -556,18 +562,18 @@ html[lang="zh-CN"] .education-box p {
   align-items: center;
   gap: 6px;
   color: var(--muted);
-  font-family: "STZhongsong", "华文中宋", "SimSun", "Songti SC", serif;
+  font-family: var(--font-zh-zhongsong);
   font-size: 0.92rem;
   white-space: nowrap;
 }
 
 html[lang="en"] .small-link,
 html[lang="en"] .drag-tip {
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-family: var(--font-latin-serif);
 }
 
 .bracket {
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-family: var(--font-latin-serif);
 }
 
 .bracket-link {
@@ -677,7 +683,7 @@ time,
 
 .corresponding-note {
   color: var(--muted);
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-family: var(--font-latin-serif);
   font-size: 0.86rem;
 }
 
@@ -697,6 +703,43 @@ time,
 
 .disabled-paper-link:hover {
   text-decoration: none;
+}
+
+.music-link-row {
+  margin: 10px 0 14px;
+}
+
+.music-platform-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  color: var(--ink);
+  font-family: var(--font-latin-serif);
+  font-size: 0.94rem;
+  box-shadow: 0 6px 18px rgba(99, 31, 38, 0.05);
+}
+
+.music-platform-link img {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  object-fit: contain;
+}
+
+.music-platform-link:hover {
+  text-decoration: none;
+  border-color: color-mix(in srgb, var(--red) 42%, var(--line));
+}
+
+.music-platform-link.is-disabled {
+  color: #a59b9f;
+  cursor: not-allowed;
+  filter: grayscale(1);
+  opacity: 0.72;
 }
 
 .vertical-scroll {
@@ -782,12 +825,12 @@ html[lang="zh-CN"] .news-list li span {
 
 .blog-card h3 {
   margin: 4px 0 5px;
-  font-family: "STZhongsong", "华文中宋", "SimSun", "Songti SC", serif;
+  font-family: var(--font-zh-zhongsong);
 }
 
 html[lang="en"] .blog-card h3,
 html[lang="en"] .gallery-tabs {
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-family: var(--font-latin-serif);
 }
 
 .blog-card p {
@@ -947,7 +990,7 @@ html[lang="en"] .gallery-tabs {
 .catalog-item.anime-catalog h3,
 .craft-entry h3,
 .catalog-grid .catalog-item:not(.anime-catalog) h3 {
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", "STZhongsong", "华文中宋", "Noto Serif CJK JP", "Yu Mincho", "Hiragino Mincho ProN", "SimSun", "Songti SC", serif;
+  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", "STZhongsong", "华文中宋", "Noto Serif SC", "Songti SC", "Noto Serif CJK JP", "Yu Mincho", "Hiragino Mincho ProN", "SimSun", serif;
 }
 
 .anime-row {
@@ -1100,7 +1143,7 @@ html[lang="en"] .gallery-tabs {
   border-radius: 6px;
   background: var(--red);
   color: #ffffff;
-  font-family: "STZhongsong", "华文中宋", "SimSun", "Songti SC", serif;
+  font-family: var(--font-zh-zhongsong);
   box-shadow: 0 8px 18px rgba(99, 31, 38, 0.06);
 }
 
@@ -1110,7 +1153,7 @@ html[lang="en"] .gallery-tabs {
 }
 
 html[lang="en"] .back-top {
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-family: var(--font-latin-serif);
 }
 
 .catalog-grid {
@@ -1215,14 +1258,14 @@ html[lang="en"] .back-top {
   border-radius: 6px;
   background: var(--red);
   color: #ffffff;
-  font-family: "STZhongsong", "华文中宋", "SimSun", "Songti SC", serif;
+  font-family: var(--font-zh-zhongsong);
   text-align: center;
   box-shadow: 0 8px 18px rgba(99, 31, 38, 0.06);
 }
 
 html[lang="en"] .detail-pager a,
 html[lang="en"] .detail-pager span {
-  font-family: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-family: var(--font-latin-serif);
 }
 
 .detail-pager a:hover {
@@ -1248,7 +1291,7 @@ html[lang="en"] .detail-pager span {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 18px;
-  font-family: "STZhongsong", "华文中宋", "SimSun", "Songti SC", serif;
+  font-family: var(--font-zh-zhongsong);
 }
 
 .gallery-tabs a {

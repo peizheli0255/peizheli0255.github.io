@@ -14,9 +14,9 @@ const text = {
     introTitle: "你好，我是李培哲。",
     educationTitle: "教育经历",
     educationMaster: "硕士阶段",
-    educationMasterText: "西安交通大学 · 信息与通信工程学院 · 通信工程 · Sep. 2025 - Present",
+    educationMasterText: "西安交通大学 · 信息与通信工程学院 · 通信工程 · 2025.09 - 至今",
     educationBachelor: "本科阶段",
-    educationBachelorText: "西北农林科技大学 · 机械与电子工程学院 · 电子信息工程 · Sep. 2021 - Jun. 2025",
+    educationBachelorText: "西北农林科技大学 · 机械与电子工程学院 · 电子信息工程 · 2021.09 - 2025.06",
     emailButton: "邮箱",
     newsTitle: "近况",
     newsItem1: "完成个人网页的初步创建，之后会继续补充科研、博客、相册与个人作品内容。",
@@ -422,6 +422,19 @@ function setupCurrentPageTopNav() {
   });
 }
 
+function setupBrandHomeLink() {
+  const page = window.location.pathname.split("/").pop() || "index.html";
+  if (page !== "index.html") return;
+
+  const brandLink = document.querySelector(".brand");
+  if (!brandLink) return;
+
+  brandLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
 document.querySelector("#languageButton")?.addEventListener("click", toggleLanguage);
 document.querySelector("#themeButton")?.addEventListener("click", toggleTheme);
 
@@ -433,4 +446,5 @@ enableDragScroll();
 enableVerticalDragScroll();
 setupCustomScrollbars();
 setupSongWheelScroll();
+setupBrandHomeLink();
 setupCurrentPageTopNav();
